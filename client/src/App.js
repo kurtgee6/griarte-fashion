@@ -8,6 +8,7 @@ import QuickView from "./pages/QuickView.js";
 import Fashion from "./pages/Fashion.js";
 import FAQ from "./pages/FAQ.js";
 import ShoppingCart from "./pages/ShoppingCart.js";
+import "./App.css";
 
 const App = () => 
   <Router>

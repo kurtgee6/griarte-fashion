@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => (
-  <ul className="nav nav-tabs">
+  <div className="Navbar">
     <li className={window.location.pathname === "/" ? "active" : ""}>
       <Link to="/">Home</Link>
     </li>
@@ -21,6 +22,6 @@ const Navbar = () => (
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/ShoppingCart">Shopping Cart</Link>
     </li>
-  </ul>
+  </div>
 ) 
 export default Navbar;
