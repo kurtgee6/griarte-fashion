@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/kurtgee6/griarte-fashion/issues"
   },
-  "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
-  "dependencies": {
-    "react-router-dom": "^4.2.2"
-  }
+  "homepage": "https://github.com/kurtgee6/griarte-fashion#readme"
 }
