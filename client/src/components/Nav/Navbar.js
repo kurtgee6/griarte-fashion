@@ -8,19 +8,19 @@ const Navbar = () =>
       <Link to="/">GRIARTE</Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
-      <Link to="/About">About</Link>
+      <Link to="/About"><i class="material-icons">chrome_reader_mode</i></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
-      <Link to="/Shop">Shop</Link>
+      <Link to="/Shop"><i class="material-icons">shopping_basket</i></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/Fashion"><i class="material-icons">photo_camera</i></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
-      <Link to="/FAQ">FAQ</Link>
+      <Link to="/FAQ"><i class="material-icons">live_help</i></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
-      <Link to="/ShoppingCart"><i class="material-icons">shopping_basket</i></Link>
+      <Link to="/ShoppingCart"><i class="material-icons">shopping_cart</i></Link>
     </li>
   </div>
 

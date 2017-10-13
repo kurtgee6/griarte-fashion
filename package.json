@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
   "dependencies": {
+<<<<<<< HEAD
+    "react-router-dom": "^4.2.2"
+=======
     "express": "^4.16.2"
+>>>>>>> 2e47946677a1b2f0debbaac71aa4d1460290d7f5
   }
 }

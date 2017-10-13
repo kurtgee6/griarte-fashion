@@ -16,10 +16,10 @@ a {
 }
 a:hover {
     /* color: #FFD700; */
-    border-bottom: 3px solid #FFD700;
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 li {
     list-style: none;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 30px;
 }
