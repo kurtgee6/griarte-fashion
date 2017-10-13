@@ -1,4 +1,9 @@
 body {
-  background: black;
-  color: pink;
+  background: url("rcopy.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 600px;
 }

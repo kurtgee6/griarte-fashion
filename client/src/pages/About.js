@@ -1,12 +1,8 @@
 import React from "react";
 import Navbar from "../components/Nav/Navbar.js";
+import AboutGriarte from "../components/AboutG/aboutGriarte.js";
+
 
 const About = () => 
-    <div>
-        {/* Importing the Navigation Bar */}
-        <Navbar/>
-        <h1>
-            Griarte baby
-        </h1>
-    </div>;
+    <AboutGriarte/>
 export default About;
