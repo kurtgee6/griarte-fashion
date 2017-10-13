@@ -1,0 +1,14 @@
+h1 {
+    
+}
+.aboutGriarte {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    height: 650px;
+    text-align: center;
+    color: rgb(204, 201, 201);
+    line-height: 30px;
+}
