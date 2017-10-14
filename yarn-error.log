@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/Cellar/node/8.3.0/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.3.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "griarte-fashion",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kurtgee6/griarte-fashion.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/kurtgee6/griarte-fashion/issues"
+    },
+    "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
+    "dependencies": {
+  <<<<<<< HEAD
+      "react-router-dom": "^4.2.2"
+  =======
+      "express": "^4.16.2"
+  >>>>>>> 2e47946677a1b2f0debbaac71aa4d1460290d7f5
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/rachgriarte/griarte-fashion/package.json: Unexpected token < in JSON at position 518
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:764:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
