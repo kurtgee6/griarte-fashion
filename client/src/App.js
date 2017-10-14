@@ -8,6 +8,8 @@ import QuickView from "./pages/QuickView.js";
 import Fashion from "./pages/Fashion.js";
 import FAQ from "./pages/FAQ.js";
 import ShoppingCart from "./pages/ShoppingCart.js";
+import SignUp from "./pages/SignUp.js";
+import LogIn from "./pages/LogIn.js";
 import "./App.css";
 
 const App = () => 
@@ -22,6 +24,8 @@ const App = () =>
         <Route exact path="/Fashion" component={Fashion} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/ShoppingCart" component={ShoppingCart} />
+        <Route exact path="/SignUp" component={SignUp} />
+        <Route exact path="/LogIn" component={LogIn} />
       </Switch>
     </div>
   </Router>;

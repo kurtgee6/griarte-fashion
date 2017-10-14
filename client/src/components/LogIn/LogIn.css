@@ -1,0 +1,24 @@
+h1 {
+  font-size: 80px;
+  color: black;
+  position: fixed;
+  margin-left: 450px;
+  font-family: 'Julius Sans One', sans-serif;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+  position: fixed; top: 0;
+}
+
+input {
+	color: black;
+}
+
+label {
+	color: black;
+}
+
+button {
+	align-items: center;
+	position: fixed;
+}
