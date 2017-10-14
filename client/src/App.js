@@ -7,10 +7,10 @@ import Shop from "./pages/Shop.js";
 import QuickView from "./pages/QuickView.js";
 import Fashion from "./pages/Fashion.js";
 import FAQ from "./pages/FAQ.js";
-import ShoppingCart from "./pages/ShoppingCart.js";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart.js";
 import "./App.css";
 
-const App = () => 
+const App = () =>
   <Router>
     <div>
       <Navbar />
