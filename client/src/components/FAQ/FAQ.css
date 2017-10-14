@@ -1,0 +1,24 @@
+.gridwrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, minmax(400px, 800px));
+  grid-auto-flow: row;
+}
+
+.Questions {
+  font-family: 'Julius Sans One', sans-serif;
+  background: black;
+  margin-top: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.Frequent {
+  font-size: 20px;
+}
+
+.q1 {
+  color: yellow;
+}
