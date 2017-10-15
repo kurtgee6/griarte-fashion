@@ -1,8 +1,21 @@
 import React from "react";
 import Navbar from "../components/Nav/Navbar.js";
+import ShoppingCart from "../components/ShoppingCart/ShoppingCart.js"
 import AboutGriarte from "../components/AboutG/aboutGriarte.js";
+import ScrollHorizontal from "../components/ScrollHorizontal/ScrollHorizontal.js";
 
-
-const About = () => 
-    <AboutGriarte/>
+class About extends React.Component {
+        constructor(props) {
+          super(props);
+    };
+    render() {
+    return (
+        <div>
+            <ScrollHorizontal>
+                <AboutGriarte/>
+                <ShoppingCart/>
+            </ScrollHorizontal>
+        </div>
+    )};
+};
 export default About;

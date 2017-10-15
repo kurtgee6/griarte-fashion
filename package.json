@@ -4,8 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,10 +22,15 @@
   },
   "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "react-router-dom": "^4.2.2"
-=======
-    "express": "^4.16.2"
->>>>>>> 2e47946677a1b2f0debbaac71aa4d1460290d7f5
+    "react-router-dom": "^4.2.2",
+    "express": "^4.16.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.13.15"
   }
 }

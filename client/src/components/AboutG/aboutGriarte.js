@@ -7,17 +7,12 @@ const AboutG = () =>
    <div>
     {/* About Griarte  */}
         <div className="aboutGriarte">
-            <h1>About Griarte</h1>
+            <p id="aboutGriarteH1">About Griarte</p>
             At Griarte we are here not just to create something that is better, but to create something that is new.
             Our look strikes the fine balance between contemporary and classy while epitomizing the urban culture around streetwear, luxury, art, and music.
-        </div>
-    {/* About Griarte Image */}
-        {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../Images/aboutGriarteImg.jpg")} />}
-    {/* sayGriarte video */}
-        <video src="../../Images/sayGriarte.MOV" width="400" height="600"></video>
     {/* Story Of The Future Timeline */}
         <div className="storyTimeline">
-            <h1>History Timeline</h1>
+        <p id="aboutGriarteH1">History Timeline</p>
             <Collapsible>
             <CollapsibleItem header='Beginning of Griarte'>
                 Kurt Griarte started Griarte in July 2016. He sold hats and shirts to his friends in order to get the word out. 
@@ -46,8 +41,13 @@ const AboutG = () =>
                     Kurt Griarte will be rebranding in the near future.
                 </CollapsibleItem>
             </Collapsible>
+            </div>
         </div>
-    {/* The Black and Yellow Team */}
+        {/* About Griarte Image */}
+            {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../Images/aboutGriarteImg.jpg")} />}
+        {/* sayGriarte video */}
+            <video src="../../Images/sayGriarte.MOV" width="400" height="300"></video>
+        {/* The Black and Yellow Team */}
         <div className="blackAndYellow">
             <h1>The Black & Yellow Team</h1>
         <p> 
