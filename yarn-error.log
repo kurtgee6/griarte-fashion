@@ -1,20 +1,32 @@
 Arguments: 
+<<<<<<< HEAD
   /usr/local/Cellar/node/8.3.0/bin/node /usr/local/bin/yarn start
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+=======
+  /usr/local/Cellar/node/7.9.0/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+>>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
 
 Yarn version: 
   1.1.0
 
 Node version: 
+<<<<<<< HEAD
   8.3.0
+=======
+  7.9.0
+>>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
 
 Platform: 
   darwin x64
 
 npm manifest: 
   {
+<<<<<<< HEAD
     "name": "griarte-fashion",
     "version": "1.0.0",
     "description": "",
@@ -40,6 +52,30 @@ npm manifest:
       "express": "^4.16.2"
   >>>>>>> 2e47946677a1b2f0debbaac71aa4d1460290d7f5
     }
+=======
+    "name": "griartefashion",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kurtgee6/griarte-fashion.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/kurtgee6/griarte-fashion/issues"
+    },
+    "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
+    "dependencies": {
+      "react-router-dom": "^4.2.2",
+      "express": "^4.16.2"
+    }
+>>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
   }
 
 yarn manifest: 
@@ -49,10 +85,17 @@ Lockfile:
   No lockfile
 
 Trace: 
+<<<<<<< HEAD
   SyntaxError: /Users/rachgriarte/griarte-fashion/package.json: Unexpected token < in JSON at position 518
+=======
+  SyntaxError: /Users/krissygriarte/Desktop/griarte-fashion/package.json: Unexpected token   in JSON at position 2
+>>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
       at JSON.parse (<anonymous>)
       at /usr/local/lib/node_modules/yarn/lib/cli.js:764:59
       at Generator.next (<anonymous>)
       at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
       at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+<<<<<<< HEAD
       at <anonymous>
+=======
+>>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
