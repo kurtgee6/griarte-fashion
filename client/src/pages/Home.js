@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Nav/Navbar.js";
+import Header from "../components/Header/Header.js";
 
-const Home = () => 
+const Home = () =>
     <div>
-        GRIARTE
+      <Header/>
+      <Navbar/>
     </div>;
-    <Navbar/>
 
 export default Home;

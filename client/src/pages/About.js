@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Nav/Navbar.js";
+import ShoppingCart from "../components/ShoppingCart/ShoppingCart.js"
+import AboutGriarte from "../components/AboutG/aboutGriarte.js";
 
-const About = () => 
+
+const About = () =>
     <div>
-        {/* Importing the Navigation Bar */}
-        <Navbar/>
-        <h1>
-            Griarte baby
-        </h1>
+      <AboutGriarte/>
+      <ShoppingCart/>
     </div>;
 export default About;
