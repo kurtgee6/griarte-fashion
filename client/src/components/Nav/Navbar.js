@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => 
+const Navbar = () =>
   <div className="Navbar">
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/ShoppingCart"><i class="material-icons">shopping_cart</i></Link>

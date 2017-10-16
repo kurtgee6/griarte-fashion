@@ -40,8 +40,7 @@ const FAQ = () =>
         <p className="q1">How long will my order take to arrive?</p>
         <p className="a1">Typically, 5-8 business days for regular shipping and 3-5 business days for fast shipping.</p>
       </div>
-
-
     </div>
+  
     </div>
 export default FAQ;

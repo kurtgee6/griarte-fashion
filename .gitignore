@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 node_modules
+=======
+node
+node_modules/
+.DS_Store
+package-lock.json
+*.log
+>>>>>>> bca7da8dba498ce688761c9f8db3a47d126eff56
