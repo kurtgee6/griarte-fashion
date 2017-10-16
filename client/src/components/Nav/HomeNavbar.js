@@ -13,9 +13,6 @@ const HomeNavbar = () =>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/Fashion"><i class="material-icons" id="homeIcons">photo_camera</i></Link>
     </li>
-    <li className={window.location.pathname === "/" ? "active" : ""}>
-      <Link to="/"><i class="material-icons" id="homeIcons">home</i></Link>
-    </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/About"><i class="material-icons" id="homeIcons">chrome_reader_mode</i></Link>
     </li>
