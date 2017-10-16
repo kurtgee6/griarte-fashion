@@ -22,18 +22,6 @@
     float: left;
     border: 80px solid rgba(0, 0, 0, 0.8);
 }
-
-.blackAndYellow{
-    background: black;
-    padding: 20px;
-    float: left;
-    margin: 0px 0px;
-    width: 600px;
-    min-height: 650px;
-    text-align: center;
-    color: rgb(204, 201, 201);
-    line-height: 30px;
-}
 #background-video{
     
     height: 100%;

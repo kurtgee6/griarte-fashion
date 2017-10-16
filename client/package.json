@@ -7,10 +7,6 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-materialize": "^1.0.16",
-<<<<<<< HEAD
-
-=======
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
     "react-native-easy-grid": "^0.1.15",
 
     "react-router-dom": "^4.2.2",

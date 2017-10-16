@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {Button, $, Modal} from 'react-materialize'
 import "./TheTeam.css";
 

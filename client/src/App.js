@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Default } from "react-router-dom";
-import Navbar from "./components/Nav/Navbar.js";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home.js";
 import About from "./pages/About.js";
 import Shop from "./pages/Shop.js";
@@ -13,7 +12,6 @@ import "./App.css";
 const App = () =>
   <Router>
     <div>
-      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/About" component={About} />

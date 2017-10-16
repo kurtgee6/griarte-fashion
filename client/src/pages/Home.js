@@ -1,15 +1,13 @@
 import React from "react";
-import Navbar from "../components/Nav/Navbar.js";
+import HomeNavbar from "../components/Nav/HomeNavbar.js";
 import Header from "../components/Header/Header.js";
 import Authentication from "../components/Authentication/Authentication.js";
-import TheTeam from "../components/TheTeam/TheTeam.js";
 
 const Home = () =>
     <div>
-      <Authentication/>
+      {/* <Authentication/> */}
       <Header/>
-      {/* <TheTeam/> */}
-      <Navbar/>
+      <HomeNavbar/>
     </div>;
 
 export default Home;

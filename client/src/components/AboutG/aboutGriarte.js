@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {Collapsible, CollapsibleItem} from 'react-materialize'
 import "./aboutGriarte.css";
 
@@ -13,7 +12,7 @@ const AboutG = () =>
     {/* Story Of The Future Timeline */}
         <div className="storyTimeline">
         <p id="aboutGriarteH1">History Timeline</p>
-            <Collapsible>
+            <Collapsible accordion>
             <CollapsibleItem header='Beginning of Griarte'>
                 Kurt Griarte started Griarte in July 2016. He sold hats and shirts to his friends in order to get the word out. 
             </CollapsibleItem>
@@ -47,22 +46,6 @@ const AboutG = () =>
             {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../Images/aboutGriarteImg.jpg")} />}
         {/* sayGriarte video */}
             <video src="../../Images/sayGriarte.MOV" width="400" height="300"></video>
-        {/* The Black and Yellow Team */}
-        <div className="blackAndYellow">
-            <h1>The Black & Yellow Team</h1>
-        <p> 
-            Front-End Developers:
-            Krissy 
-            {/* include img */}
-            Rach
-            </p>
-            <p>
-            Back-End Developers:
-            Kurt 
-            {/* include img */}
-            Melvin
-            </p>
-        </div>
     </div>;
 
 export default AboutG;

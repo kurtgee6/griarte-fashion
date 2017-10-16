@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {Row, Input, Icon} from 'react-materialize'
+import {Row, Input} from 'react-materialize'
 import "./Authentication.css";
 
 const Authentication = () => 
