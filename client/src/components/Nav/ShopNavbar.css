@@ -1,0 +1,21 @@
+.ShopNav {
+    background: rgba(0, 0, 0, .6);
+    width: 130px;
+    height: 470px;
+    margin-top: 80px;
+    margin-left: 80px;
+    padding-left: 20px;
+    top: 0;
+    position: fixed;
+    color: white;
+    font-size: 14px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#ShopNavShirts {
+    margin: 35px 0px;
+}
+#ShopNavShirts:hover {
+    color: rgb(135, 56, 70);
+}
+
