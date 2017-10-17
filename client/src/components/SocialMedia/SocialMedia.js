@@ -1,21 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Button} from 'react-materialize';
 import "./SocialMedia.css";
 
 const SocialMedia = () => 
-    <div>
-        <p id="Authentication">What's Up? Let's Sign Up!</p>
-        <Row>
-            <Input s={6} label="First Name" />
-            <Input s={6} label="Last Name" />
-            <Input s={6} label="Username" />
-            <Input type="password" label="Password" s={12} />
-            <Input type="email" label="Email" s={12} />
-            {/* You want to subscribe */}
-            <p id="emailSubscription">Subscribe to Griarte!</p>
-            <Input name='group1' type='checkbox' value='yellow' label='Yes' defaultValue='checked' />
-            <Input name='group1' type='checkbox' value='yellow' label='No' defaultValue='checked' />
-        </Row>
-    </div>; 
+
+    <Button floating fab='horizontal' icon='explicit' className='socialMediaBtn' large style={{bottom: '45px', right: '24px'}}>
+        <a href="https://www.instagram.com/griarte.co/">
+            <Button className='SCicon'>instagram</Button>
+        </a>
+        <a href="https://www.facebook.com/griarte.co">
+            <Button className='SCicon'>facebook</Button>
+        </a>
+        <a href="https://twitter.com/griarte_co">
+            <Button className='SCicon'>twitter</Button>
+        </a>
+        <a href="https://www.snapchat.com/griarte.co">
+            <Button className='SCicon'>snapchat</Button>
+        </a>
+    </Button>
 
 export default SocialMedia;
