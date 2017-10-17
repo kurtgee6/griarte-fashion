@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Button, Icon, SideNav, SideNavItem} from 'react-materialize'
-
+import {Button, Icon, SideNav, SideNavItem} from 'react-materialize';
+import "./ShoppingCart.css"
 
 
 class ShoppingCart extends React.Component {
@@ -21,17 +21,15 @@ class ShoppingCart extends React.Component {
     	       >
     	        <SideNavItem userView
     		        user={{
-    			        background: 'img/office.jpg',
-    			        image: 'img/yuna.jpg',
-    			        name: 'John Doe',
-    			        email: 'jdandturk@gmail.com'
+    			        image: './griarte_files/griarte8.jpg',
+    			        name: 'Shoppers name:',
+    			        email: 'shoppers@shoppers.com'
     		        }}
     	        />
-    	      <SideNavItem href='#!icon' icon='cloud'>First Link With Icon</SideNavItem>
-    	      <SideNavItem href='#!second'>Second Link</SideNavItem>
+    	      <SideNavItem>MY CART:</SideNavItem>
+    	      <SideNavItem href='#!second'>Item</SideNavItem>
     	      <SideNavItem divider />
-    	      <SideNavItem subheader>Subheader</SideNavItem>
-    	      <SideNavItem waves href='#!third'>Third Link With Waves</SideNavItem>
+    	      <SideNavItem button waves='light'>BUY NOW</SideNavItem>
           </SideNav>
         </div>
     )
