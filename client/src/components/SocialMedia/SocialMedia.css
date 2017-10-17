@@ -1,0 +1,13 @@
+a.btn.btn-large.btn-floating.socialMediaBtn {
+    background: linear-gradient(to right, rgb(40, 40, 40) , rgb(33, 60, 40));
+    position: static;
+    bottom: 0;
+    border-radius: none;
+}
+.SCicon {
+    background: linear-gradient(to right, rgb(12, 7, 7) , rgba(43, 32, 7, 0.707));
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    border-left: 3px rgb(55, 55, 55) solid;
+}
