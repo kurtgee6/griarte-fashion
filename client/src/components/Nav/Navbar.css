@@ -18,7 +18,7 @@
 }
 #navIcons:hover {
     background: black;
-    color: #CFB53B;
+    color: rgb(255, 255, 255);
     border: 2px solid rgb(51, 51, 51);
 }
 #firstIcon {
