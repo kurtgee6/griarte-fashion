@@ -6,6 +6,7 @@ import Shop from "./pages/Shop.js";
 import QuickView from "./pages/QuickView.js";
 import FashionPage from "./pages/FashionPage.js";
 import FAQ from "./pages/FAQ.js";
+import Dummy from "./pages/dummypage.js";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart.js";
 import "./App.css";
 
@@ -19,6 +20,7 @@ const App = () =>
         <Route exact path="/Shop/:id" component={QuickView} />
         <Route exact path="/FashionPage" component={FashionPage} />
         <Route exact path="/FAQ" component={FAQ} />
+        <Route exact path="/Dummy" component={Dummy} />
         <Route exact path="/ShoppingCart" component={ShoppingCart} />
       </Switch>
     </div>

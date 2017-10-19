@@ -1,29 +1,18 @@
-import React from 'react'
-import StripeCheckout from 'react-stripe-checkout';
-import "./Stripe-Checkout.css";
- 
+import React from 'react';
+import {render} from 'react-dom';
+import {StripeProvider} from 'react-stripe-elements';
+
+import MyStoreCheckout from './MyStoreCheckout.js';
+
 export default class TakeMoney extends React.Component {
-  onToken = (token) => {
-    fetch('/save-stripe-token', {
-      method: 'POST',
-      body: JSON.stringify(token),
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
-    });
+  render() { 
+    
+      return (
+      <StripeProvider apiKey="pk_live_FxnpamVYUuQg69CM1ana3qKI">
+        <MyStoreCheckout />
+      </StripeProvider>
+    );
+  
   }
- 
-  // ...
- 
-  render() {
-    return (
-      // ...
-      <StripeCheckout
-        token={this.onToken}
-        stripeKey="my_PUBLISHABLE_stripekey"
-      />
-    // <p>ppp</p>
-    )
-  }
-}
+
+};
