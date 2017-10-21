@@ -1,3 +1,8 @@
+.aboutBackground {
+    background: black;
+    height: 100%;
+    width: 100%;
+}
 /* About Griarte */
 #aboutGriarteH1 {
     margin-bottom: 420px;
@@ -73,13 +78,19 @@ div.collapsible-body {
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
+/* About Video */
+
 /* The Team */
 .Team {
     width: 370px;
-    height: 100vh;
+    /* height: 100vh; */
     float: left;
     background: black;
     padding: 5px;
+    margin-top: 7%;
+}
+Slider {
+    width: 20px;
 }
 #TheTeamP1 {
     font-size: 20px;
@@ -95,4 +106,7 @@ div.collapsible-body {
     color: rgb(52, 68, 48);
     font-size:18px;
     text-align: center;
+}
+.slider.indicators.indicator-item {
+    background-color: rgb(133, 9, 9);
 }

@@ -1,8 +1,10 @@
 import React from "react";
-import {Collapsible, CollapsibleItem, Col, Card, Slide, Slider} from 'react-materialize'
+import {Collapsible, CollapsibleItem, Slide, Slider, Modal, Button} from 'react-materialize';
+import { Player } from 'video-react';
+import "../../../node_modules/video-react/dist/video-react.css";
 import "./aboutGriarte.css";
 
-const AboutG = () => 
+const AboutG = (props) => 
    <div>
     {/* About Griarte  */}
         <div className="aboutGriarte">
@@ -11,8 +13,15 @@ const AboutG = () =>
         </div>
         {/* About Griarte Image */}
             {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../griarte_files/griarte33.jpg")} />}
-        {/* What is the photo about? */}
-
+        {/* Griarte Image */}
+        <div classname="aboutVideo">
+            <Player
+                playsInline
+                poster="/assets/poster.png"
+                style
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            />
+        </div>
         {/* Story Of The Future Timeline */}
         <div className="storyTimeline">
             <Collapsible accordion>

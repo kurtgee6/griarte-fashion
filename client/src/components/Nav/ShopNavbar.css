@@ -1,14 +1,49 @@
+/* body */
+.ShopBody {
+    background-color: black;
+}
 /* Tab Navbar */
 .row {
     width: 94%;
     margin-left: 6%;
     position: fixed;
 }
-#ShopNavbars {
-    color: red;
-}
 /* Inside Tab */
-#imageInShop {
-    width: 800px;
-    height: 200px;
+.griarteOm{
+    width: 350px;
+    float: left;
+    margin: 0px 3px;
+}
+.card-content {
+    background: black;
+}
+#cardTitle {
+    color:rgb(145, 145, 145);
+    font-size: 22px;
+    padding:10px;
+    margin: 0;
+}
+#shirtPrice{
+    color: #26a69a;
+}
+#shirtQuickView {
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    border: 2px solid black;
+    padding-left: 30px;
+    margin: 0;
+}
+/* add to cart */
+#addToCart {
+    background: linear-gradient(to right, rgb(169, 169, 169) , rgb(169, 169, 169));
+    border-radius: 20%;
+    border: none;
+}
+#pickSize {
+    background-color: black;
+}
+#shareThis {
+    width: 25px;
+    height: 25px;
+    margin: 20px 5px 0px 5px;
 }
