@@ -6,7 +6,6 @@ import Shop from "./pages/Shop.js";
 import QuickView from "./pages/QuickView.js";
 import FashionPage from "./pages/FashionPage.js";
 import FAQ from "./pages/FAQ.js";
-import ShoppingCart from "./pages/ShoppingCart.js";
 import SignUp from "./pages/SignUp.js";
 import SignIn from "./pages/SignIn.js";
 import Dummy from "./pages/dummypage.js";
