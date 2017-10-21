@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {Button, Icon, SideNav, SideNavItem} from 'react-materialize';
+import TakeMoney from "../Stripe-Checkout/Stripe-Checkout.js";
+
 import "./ShoppingCart.css"
 
 
@@ -29,7 +31,7 @@ class ShoppingCart extends React.Component {
     	      <SideNavItem>MY CART:</SideNavItem>
     	      <SideNavItem href='#!second'>Item</SideNavItem>
     	      <SideNavItem divider />
-    	      <SideNavItem button waves='light'>BUY NOW</SideNavItem>
+    	      <TakeMoney />
           </SideNav>
         </div>
     )
