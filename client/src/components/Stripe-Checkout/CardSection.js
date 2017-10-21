@@ -1,14 +1,13 @@
 // CardSection.js
 import React from 'react';
-import {CardElement} from 'react-stripe-elements';
+import {Button} from 'react-materialize';
 
 class CardSection extends React.Component {
   render() {
     return (
-      <label>
-        Card details
-        <CardElement style={{base: {fontSize: '18px'}}} />
-      </label>
+     <div>
+       		<Button waves='light'>Pay</Button>
+      </div>
     );
   }
 };

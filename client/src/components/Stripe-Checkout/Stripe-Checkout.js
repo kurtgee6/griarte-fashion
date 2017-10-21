@@ -1,25 +1,6 @@
-// import React from 'react';
-// import {render} from 'react-dom';
-// import {StripeProvider} from 'react-stripe-elements';
-
-// import MyStoreCheckout from './MyStoreCheckout.js';
-
-// export default class TakeMoney extends React.Component {
-//   render() { 
-    
-//       return (
-//       <StripeProvider apiKey="pk_live_FxnpamVYUuQg69CM1ana3qKI">
-//         <MyStoreCheckout />
-//       </StripeProvider>
-//     );
-  
-//   }
-
-// };
-
-
 import React from 'react'
 import StripeCheckout from 'react-stripe-checkout';
+import CardSection from './CardSection.js';
  
 export default class TakeMoney extends React.Component {
   onToken = (token) => {
@@ -41,13 +22,13 @@ export default class TakeMoney extends React.Component {
       <StripeCheckout
         name="Griarte" // the pop-in header title
         description="Issa Website" // the pop-in header subtitle
-        image="https://www.vidhub.co/assets/logos/vidhub-icon-2e5c629f64ced5598a56387d4e3d0c7c.png" // the pop-in header image (default none)
+        image="http://res.cloudinary.com/dpeud2rab/image/upload/v1508600888/griarteIcon_eprcfq.png" // the pop-in header image (default none)
         ComponentClass="div"
         panelLabel="Give Money" // prepended to the amount in the bottom pay button
         amount={1000000} // cents
         currency="USD"
         stripeKey="pk_live_FxnpamVYUuQg69CM1ana3qKI"
-        locale="usa"
+        locale="en"
         // Note: Enabling either address option will give the user the ability to
         // fill out both. Addresses are sent as a second parameter in the token callback.
         shippingAddress
@@ -68,10 +49,7 @@ export default class TakeMoney extends React.Component {
         // useful if you're using React-Tap-Event-Plugin
         triggerEvent="onClick"
         >
-        <button className="btn btn-primary">
-          Use your own child component, which gets wrapped in whatever
-          component you pass into as "ComponentClass" (defaults to span)
-        </button>
+          <CardSection />
       </StripeCheckout>
     )
   }
