@@ -22,5 +22,14 @@ const Navbar = () =>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/FAQ"><i class="material-icons" id="navIcons">live_help</i></Link>
     </li>
+        <li className={window.location.pathname === "/advice" ? "active" : ""}>
+      <Link to="/SignUp"><a title="Sign Up">Register</a></Link>
+    </li>
+    <li className={window.location.pathname === "/advice" ? "active" : ""}>
+      <Link to="/SignIn"><a title="Sign In">Sign In</a></Link>
+    </li>
+    <li className={window.location.pathname === "/advice" ? "active" : ""}>
+      <Link to="/LogOut"><a title="Sign Out">Sign Out</a></Link>
+    </li>
   </div>
 export default Navbar;
