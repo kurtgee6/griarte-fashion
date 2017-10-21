@@ -1,1 +1,13 @@
-/* Will work on this later*/
+.side-nav, .side-nav a, .side-nav li {
+  background-color: grey;
+  color: white;
+}
+
+.sidenavitem {
+  color: white;
+  background-color: yellow;
+}
+
+/*.btn {
+  position: absolute;
+}*/

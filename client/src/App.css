@@ -1,9 +1,10 @@
 body {
-  background: url("Images/background.jpg");
+  font-family: 'Julius Sans One', sans-serif;
+  background: url("griarte_files/background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(255, 255, 255);
-  height: 600px;
+  height: 100vh;
 }

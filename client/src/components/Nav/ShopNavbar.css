@@ -1,0 +1,14 @@
+/* Tab Navbar */
+.row {
+    width: 94%;
+    margin-left: 6%;
+    position: fixed;
+}
+#ShopNavbars {
+    color: red;
+}
+/* Inside Tab */
+#imageInShop {
+    width: 800px;
+    height: 200px;
+}

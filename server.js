@@ -8,8 +8,8 @@ const env = require('dotenv').load();
 const routes = require('./routes');
 const PORT = process.env.PORT || 5000;
 
-
-
+//Stripe 
+const stripe = require('stripe')('sk_test_zEUsB2qIFm8kLWvwuCz9aI4D');
 
 //The code below allows our app to the body parser
 app.use(bodyParser.urlencoded({extended: true}));
