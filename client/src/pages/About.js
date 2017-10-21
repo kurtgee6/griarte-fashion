@@ -8,5 +8,6 @@ const About = () =>
     <div>
       <AboutGriarte/>
       <ShoppingCart/>
+      <Navbar/>
     </div>;
 export default About;

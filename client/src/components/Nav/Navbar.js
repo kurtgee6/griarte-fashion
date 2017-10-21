@@ -26,7 +26,7 @@ const Navbar = () =>
       <Link to="/SignUp"><a title="Sign Up">Register</a></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
-      <Link to="/LogIn"><a title="Sign In">Sign In</a></Link>
+      <Link to="/SignIn"><a title="Sign In">Sign In</a></Link>
     </li>
     <li className={window.location.pathname === "/advice" ? "active" : ""}>
       <Link to="/LogOut"><a title="Sign Out">Sign Out</a></Link>
