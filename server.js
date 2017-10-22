@@ -17,10 +17,19 @@ const PORT = process.env.PORT || 5000;
 // See your keys here: https://dashboard.stripe.com/account/apikeys
 // const stripe = Stripe("pk_live_FxnpamVYUuQg69CM1ana3qKI");
 
+//
+// console.log(request.body);
+//
+// // Get the payment token ID submitted by the form:
+// var token = request.body.stripeToken; // Using Express
+//
+
+
 // console.log(request.body);
 
 // // Get the payment token ID submitted by the form:
 // var token = request.body.stripeToken; // Using Express
+
 
 // // Create a Customer:
 // stripe.customers.create({
@@ -36,6 +45,10 @@ const PORT = process.env.PORT || 5000;
 // }).then(function(charge) {
 //   // Use and save the charge info.
 // });
+
+//
+
+
 
 // // YOUR CODE (LATER): When it's time to charge the customer again, retrieve the customer ID.
 // stripe.charges.create({
@@ -56,17 +69,17 @@ app.use(express.static("client/build"));
 
 //The code below allows us to add passport and express as middleware
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
- 
+
 app.use(passport.initialize());
- 
+
 app.use(passport.session()); // persistent login sessions
 
- 
- 
+
+
 app.get('/', function(req, res) {
- 
+
     res.send('Welcome to Griarte Fashion!');
- 
+
 });
 
 //Require our DB Models user, clothing and faq
@@ -80,22 +93,22 @@ const authRoute = require('./routes/auth.js')(app, passport);
 
 //load passport strategies
 require('./config/passport/passport.js')(passport, models.user);
- 
+
 //Sync Database
 models.sequelize.sync().then(function() {
- 
+
     console.log('Nice! Database looks fine')
- 
+
 }).catch(function(err) {
- 
+
     console.log(err, "Something went wrong with the Database Update!")
- 
+
 });
- 
+
 app.listen(PORT, function(err) {
- 
+
     if (!err)
         console.log("Site is live");
     else console.log(err)
- 
+
 });

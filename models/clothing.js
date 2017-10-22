@@ -1,7 +1,7 @@
 module.exports = function(sequelize, Sequelize) {
- 
+
     var Clothing = sequelize.define('clothing', {
- 
+
         id: {
             autoIncrement: true,
             primaryKey: true,
@@ -11,7 +11,7 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.STRING
         },
         price: {
-            type: Sequelize.DECIMAL(2,2)
+            type: Sequelize.DECIMAL(6,2)
         },
         sizes: {
             type: Sequelize.STRING
@@ -21,9 +21,8 @@ module.exports = function(sequelize, Sequelize) {
         },
         image: {
             type: Sequelize.STRING
-        }  
+        }
     });
- 
+
     return Clothing;
 }
-
