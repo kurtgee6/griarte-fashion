@@ -1,8 +1,10 @@
 import React from "react";
-import {Collapsible, CollapsibleItem, Col, Card} from 'react-materialize'
+import {Collapsible, CollapsibleItem, Slide, Slider, Modal, Button} from 'react-materialize';
+import { Player } from 'video-react';
+import "video-react/dist/video-react.css";
 import "./aboutGriarte.css";
 
-const AboutG = () => 
+const AboutG = (props) => 
    <div>
     {/* About Griarte  */}
         <div className="aboutGriarte">
@@ -10,9 +12,16 @@ const AboutG = () =>
             At Griarte, <br/>we are here to create the vision. <br/>Our look strikes the fine balance between contemporary and classy while epitomizing the urban culture around<br/> streetwear, luxury, art, and music.
         </div>
         {/* About Griarte Image */}
-            {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../Images/aboutGriarteImg0.jpg")} />}
-        {/* What is the photo about? */}
-
+            {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../griarte_files/griarte33.jpg")} />}
+        {/* Griarte Image */}
+        <div classname="aboutVideo">
+            <Player
+                playsInline
+                poster="/assets/poster.png"
+                style
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            />
+        </div>
         {/* Story Of The Future Timeline */}
         <div className="storyTimeline">
             <Collapsible accordion>
@@ -59,47 +68,67 @@ const AboutG = () =>
                 </CollapsibleItem>
             </Collapsible>
             </div>
-            <div className="emptySpace">
-            </div>
         {/* The Team */}
         <div className="Team">
-            {/* Ending Griarte Image */}
-            {<img className="griarte27" alt="aboutGriarteimg" src={require("../../griarte_files/griarte27.jpg")} />}
-            {<img className="griarte30" alt="aboutGriarteimg" src={require("../../griarte_files/griarte30.jpg")} />}
-
-        {/* <Col m={6} s={12}>
-            <Card className='blue-grey darken-1' textClassName='white-text' title='Krissy Griarte' actions={[<a href='#'>This is a link</a>]}>
-                Front-End Developer
-                Favorite Part of Developing: 
-                Least Favorite Part of Developing:
-            </Card>
-        </Col>
-        <Col m={6} s={12}>
-            <Card className='blue-grey darken-1' textClassName='white-text' title='Rachel Griarte' actions={[<a href='#'>This is a link</a>]}>
-                Front-End Developer
-                Favorite Part of Developing: 
-                Least Favorite Part of Developing:
-            </Card>
-        </Col>
-        <Col m={6} s={12}>
-            <Card className='blue-grey darken-1' textClassName='white-text' title='Kurt Griarte' actions={[<a href='#'>This is a link</a>]}>
-                Back-End Developer
-                Favorite Part of Developing: 
-                Least Favorite Part of Developing:
-            </Card>
-        </Col>
-        <Col m={6} s={12}>
-            <Card className='blue-grey darken-1' textClassName='white-text' title='Melvin Hill' actions={[<a href='#'>This is a link</a>]}>
-                Back-End Developer
-                Favorite Part of Developing: 
-                Least Favorite Part of Developing:
-            </Card>
-        </Col> */}
+            <Slider>
+                <Slide
+                    src=""
+                    placement="top">
+                    <h3 id="TeamSlogan"> The Team</h3>
+                    <h3 id="TeamSlogans">
+                        Black <br/> & <br/> Yellow
+                    </h3>
+                </Slide>
+                <Slide
+                    src=""
+                    placement="left">
+                    <h3 id="TeamSlogan"> Krissy Griarte<br/>Front-End Developer</h3>
+                    <h3 id="TeamSlogans">
+                        Favorite Part: 
+                        <br/>Being creative in your own way! 
+                        <br/>
+                        <br/>Least Favorite: 
+                        <br/>Debugging :(
+                    </h3>
+                </Slide>
+                <Slide
+                    id="teamNames"
+                    placement="left">
+                    <h3 id="TeamSlogan"> Rach Griarte<br/>Front-End Developer</h3>
+                    <h3 id="TeamSlogans">
+                        Favorite Part: 
+                        <br/>Designing the look and feel
+                        <br/>
+                        <br/>Least Favorite: 
+                        <br/>Positoning/Resizing
+                    </h3>
+                </Slide>
+                <Slide
+                    src=""
+                    placement="left">
+                    <h3 id="TeamSlogan"> Kurt Griarte<br/>Back-End Developer</h3>
+                    <h3 id="TeamSlogans">
+                        Favorite Part: 
+                        <br/>Designing the look and feel
+                        <br/>
+                        <br/>Least Favorite: 
+                        <br/>Positoning/Resizing
+                    </h3>
+                </Slide>
+                <Slide
+                    src=""
+                    placement="left">
+                    <h3 id="TeamSlogan"> Melvin Hill<br/>Back-End Developer</h3>
+                    <h3 id="TeamSlogans">
+                        Favorite Part: 
+                        <br/>Designing the look and feel
+                        <br/>
+                        <br/>Least Favorite: 
+                        <br/>Positoning/Resizing
+                    </h3>
+                </Slide>
+            </Slider>
         </div>
-       {/* <div className="SocialMedia">
-        hiiscksnfknsk
-        </div> */}
-
     </div>;
 
 export default AboutG;
