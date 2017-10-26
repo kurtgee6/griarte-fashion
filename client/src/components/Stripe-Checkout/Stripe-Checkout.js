@@ -24,7 +24,7 @@ export default class TakeMoney extends React.Component {
         description="Issa Website" // the pop-in header subtitle
         image="http://res.cloudinary.com/dpeud2rab/image/upload/v1508600888/griarteIcon_eprcfq.png" // the pop-in header image (default none)
         ComponentClass="div"
-        panelLabel="Give Money" // prepended to the amount in the bottom pay button
+        panelLabel="Where my money" // prepended to the amount in the bottom pay button
         amount={1000000} // cents
         currency="USD"
         stripeKey="pk_live_FxnpamVYUuQg69CM1ana3qKI"
