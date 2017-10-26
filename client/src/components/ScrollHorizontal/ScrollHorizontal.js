@@ -8,7 +8,7 @@ class ScrollHorizontal extends React.Component {
     render() {
         return (
     <div>
-        <div class="scroll">
+        <div className="scroll">
             {this.props.children}
         </div>
     </div>

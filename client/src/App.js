@@ -10,7 +10,7 @@ import ShoppingCart from "./pages/ShoppingCart.js";
 import SignUp from "./pages/SignUp.js";
 import SignIn from "./pages/SignIn.js";
 import Dummy from "./pages/dummypage.js";
-import ShoppingCart from "./components/ShoppingCart/ShoppingCart.js";
+//import ShoppingCart from "./components/ShoppingCart/ShoppingCart.js";
 import "./App.css";
 
 const App = () =>

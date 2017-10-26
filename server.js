@@ -6,7 +6,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const env = require('dotenv').load();
 const routes = require('./routes');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 //Stripe 
 const stripe = require('stripe')('sk_test_zEUsB2qIFm8kLWvwuCz9aI4D');

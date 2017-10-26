@@ -1,19 +1,68 @@
 import React from "react";
-import { Tab, Tabs, Card, CardTitle, Input, Button} from "react-materialize";
+import API from "../../utils/API";
+import { List, ListItem } from "../../components/List";
+import {$, Tab, Tabs, Card, CardTitle, Input, Button} from "react-materialize";
 import "./ShopNavbar.css";
 import ScrollHorizontal from "../ScrollHorizontal/ScrollHorizontal.js";
+import { Link } from "react-router-dom";
+
+
 
 class ShopNavbar extends React.Component {
     constructor(props) {
-    super(props);
+        super(props);
     };
+
+    state: {
+        clothing:[],
+    }
+
+    componentDidMount() {
+        //Checking if component mounted
+        //console.log("Component did mount");
+        this.loadClothing();
+    };
+
+    loadClothing = () => {
+        console.log("Loaded Clothes");
+        API.getClothes().then(res => console.log(res.data))
+        .catch(err => console.log(err));
+
+    };
+
+    //this.setState({clothing: res.data})
+
     render() {
     return (
     <div className="ShopBody">
         <Tabs className='tab-demo z-depth-1'>
             {/* Render All clothes */}
             <Tab title="All" id="ShopNavbars">
-                All
+                {this.state.clothing.length ? (
+                <List>
+                 {this.state.clothing.map(item => (
+                   <ListItem key={item.id}>
+                     <Link to={"/clothing/" + item.id}>
+                       <strong>
+                         Type {item.type} 
+                         Price {item.price}
+                         Sizes {item.sizes}
+                         Quantity {item.quantity}
+                         Image {item.image}
+                       </strong>
+                     </Link>
+                   </ListItem>
+                 ))}
+               </List>
+             ) : (
+              <h3>No Results to Display</h3>
+            )}
+            }
+                <Card header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
+                        title="Card Title"
+                        reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
+                        <p><a href="#">This is a link</a></p>
+                </Card>
             </Tab>
             {/* Render Long Sleeves Shirts */}
             <Tab title="Long Sleeves">

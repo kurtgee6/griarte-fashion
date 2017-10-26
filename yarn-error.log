@@ -1,32 +1,20 @@
 Arguments: 
-<<<<<<< HEAD
-  /usr/local/Cellar/node/8.3.0/bin/node /usr/local/bin/yarn start
+  C:\Program Files\nodejs\node.exe C:\Users\melvi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-=======
-  /usr/local/Cellar/node/7.9.0/bin/node /usr/local/bin/yarn start
-
-PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
+  C:\Users\melvi\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\melvi\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files\MongoDB\Server\3.4\bin;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Users\melvi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;C:\Users\melvi\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.1.0
 
 Node version: 
-<<<<<<< HEAD
-  8.3.0
-=======
-  7.9.0
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
+  7.10.0
 
 Platform: 
-  darwin x64
+  win32 x64
 
 npm manifest: 
   {
-<<<<<<< HEAD
     "name": "griarte-fashion",
     "version": "1.0.0",
     "description": "",
@@ -46,36 +34,20 @@ npm manifest:
     },
     "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
     "dependencies": {
-  <<<<<<< HEAD
-      "react-router-dom": "^4.2.2"
-  =======
-      "express": "^4.16.2"
-  >>>>>>> 2e47946677a1b2f0debbaac71aa4d1460290d7f5
+      "axios": "^0.16.2",
+      "bcrypt-nodejs": "0.0.3",
+      "body-parser": "^1.18.2",
+      "dotenv": "^4.0.0",
+      "express": "^4.16.2",
+      "express-handlebars": "^3.0.0",
+      "express-session": "^1.15.6",
+      "mysql": "^2.15.0",
+      "mysql2": "^1.4.2",
+      "passport": "^0.4.0",
+      "passport-local": "^1.0.0",
+      "sequelize": "^4.15.0",
+      "stripe": "^5.1.1",
     }
-=======
-    "name": "griartefashion",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/kurtgee6/griarte-fashion.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/kurtgee6/griarte-fashion/issues"
-    },
-    "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
-    "dependencies": {
-      "react-router-dom": "^4.2.2",
-      "express": "^4.16.2"
-    }
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
   }
 
 yarn manifest: 
@@ -85,17 +57,9 @@ Lockfile:
   No lockfile
 
 Trace: 
-<<<<<<< HEAD
-  SyntaxError: /Users/rachgriarte/griarte-fashion/package.json: Unexpected token < in JSON at position 518
-=======
-  SyntaxError: /Users/krissygriarte/Desktop/griarte-fashion/package.json: Unexpected token   in JSON at position 2
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
+  SyntaxError: C:\griarte-fashion\package.json: Unexpected token } in JSON at position 882
       at JSON.parse (<anonymous>)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:764:59
+      at C:\Users\melvi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:764:59
       at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
-<<<<<<< HEAD
-      at <anonymous>
-=======
->>>>>>> 23f7722dc89bfa86f4c54acd2005d680148ef6b4
+      at step (C:\Users\melvi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:92:30)
+      at C:\Users\melvi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:103:13

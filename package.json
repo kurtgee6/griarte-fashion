@@ -34,8 +34,6 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.15.0",
-    "react-router-dom": "^4.2.2",
-    "stripe": "^5.1.1",
-    "express": "^4.16.2"
+    "stripe": "^5.1.1"
   }
 }
