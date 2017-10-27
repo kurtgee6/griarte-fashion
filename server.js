@@ -107,8 +107,10 @@ models.sequelize.sync().then(function() {
 
 app.listen(PORT, function(err) {
 
-    if (!err)
+    if (!err) {
         console.log("Site is live");
+        console.log("Listening on port: " + PORT);
+    }
     else console.log(err)
 
 });
