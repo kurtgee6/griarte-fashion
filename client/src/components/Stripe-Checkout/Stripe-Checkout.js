@@ -4,14 +4,10 @@ import CardSection from './CardSection.js';
  
 export default class TakeMoney extends React.Component {
   onToken = (token) => {
-    fetch('/save-stripe-token', {
+    fetch('/charge', {
       method: 'POST',
       body: JSON.stringify(token),
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
-    });
+    })
   }
  
   // ...
@@ -27,7 +23,7 @@ export default class TakeMoney extends React.Component {
         panelLabel="Where my money" // prepended to the amount in the bottom pay button
         amount={1000000} // cents
         currency="USD"
-        stripeKey="pk_live_FxnpamVYUuQg69CM1ana3qKI"
+        stripeKey="pk_test_676ddVKqlL4lp4bu7vsqAcJA"
         locale="en"
         // Note: Enabling either address option will give the user the ability to
         // fill out both. Addresses are sent as a second parameter in the token callback.
