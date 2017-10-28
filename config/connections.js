@@ -6,7 +6,7 @@
 const Sequelize = require("sequelize");
 
 // Creates mySQL connection using Sequelize
-const sequelize = new Sequelize("griarte", "root", "2236Nivlem!!", {
+const sequelize = new Sequelize("griarte", "root", "password", {
   host: "localhost",
   dialect: "mysql",
   pool: {
