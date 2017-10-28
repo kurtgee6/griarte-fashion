@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var Stripe = require('stripe');
 const routes = require('./routes');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
