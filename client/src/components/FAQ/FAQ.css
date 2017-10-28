@@ -26,7 +26,7 @@
   text-align: center;
   padding: 10px;
   font-size: 12px;
-  background: black;
+  background: rgb(0, 0, 0);
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -63,7 +63,7 @@ input[type=text]:focus:not([readonly]), input[type=email]:focus:not([readonly]) 
   box-shadow: none;
 }
 input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([readonly])+label {
-  color: rgb(60, 60, 60);
+  color: rgb(255, 255, 255);
   padding: 0px 10px;
   border-radius: 50%;
   background: gray;
@@ -75,5 +75,5 @@ input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([read
   position: fixed;
   background: yellow;
   height: 100px;
-  
+
 }
