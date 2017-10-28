@@ -3,13 +3,14 @@ import { Tab, Tabs, Card, CardTitle, Input, Button} from "react-materialize";
 import "./ShopNavbar.css";
 import ScrollHorizontal from "../ScrollHorizontal/ScrollHorizontal.js";
 
+
 class ShopNavbar extends React.Component {
     constructor(props) {
     super(props);
     };
     render() {
     return (
-    <div className="ShopBody">
+    <div className="shopBackground">
         <Tabs className='tab-demo z-depth-1'>
             {/* Render All clothes */}
             <Tab title="All" id="ShopNavbars">

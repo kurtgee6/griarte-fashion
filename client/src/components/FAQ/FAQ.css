@@ -1,24 +1,79 @@
-.gridwrapper {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(6, minmax(400px, 800px));
-  grid-auto-flow: row;
+.FAQcards{
+  margin-left: 80px;
+  padding-left: 20px;
+  background: rgba(40, 39, 39, 0.6);
+  height: 72vh;
 }
-
-.Questions {
-  font-family: 'Julius Sans One', sans-serif;
+.FAQquestion {
+  float: left;
+  margin-left: 3px;
+  position: relative;
+  display: inline-block;
+  padding: 50px 20px;
   background: black;
-  margin-top: 200px;
-  margin-left: 40px;
-  margin-right: 40px;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+.FAQquestion:hover {
+  color: rgb(96, 121, 96);
+  background: black;
+}
+.FAQquestion:hover {}
+/* Tooltip text */
+.FAQquestion .FAQanswer {
+  visibility: hidden;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-size: 12px;
+  background: black;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 40%;
+  margin-left: -90px;
+  margin-top: 25px;
 }
 
-.Frequent {
-  font-size: 20px;
+/* Show the tooltip text when you mouse over the tooltip container */
+.FAQquestion:hover .FAQanswer{
+  visibility: visible;
 }
-
-.q1 {
-  color: yellow;
+.faqMore {
+  background: linear-gradient(to right, black); 
+  bottom: 0;
+  /* border-bottom: 60px solid rgba(0, 0, 0, 0.7); */
+  height: 30vh;
+  margin-left: 80px;
+  padding: 10px 120px 10px 80px;
+}
+#faqTop {
+  color: rgb(230, 230, 230);
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+#faqButton {
+  background-color: rgb(33, 33, 33);
+  
+}
+input[type=text]:focus:not([readonly]), input[type=email]:focus:not([readonly])  {
+  border-bottom: none;
+  box-shadow: none;
+}
+input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([readonly])+label {
+  color: rgb(60, 60, 60);
+  padding: 0px 10px;
+  border-radius: 50%;
+  background: gray;
+  text-shadow: none;
+  font-size: 17px;
+}
+#faqQ {
+  right: 0px;
+  position: fixed;
+  background: yellow;
+  height: 100px;
+  
 }
