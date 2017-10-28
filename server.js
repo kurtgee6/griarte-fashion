@@ -9,23 +9,19 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var Stripe = require('stripe');
 const routes = require('./routes');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
 
-// See your keys here: https://dashboard.stripe.com/account/apikeys
-// const stripe = Stripe("pk_live_FxnpamVYUuQg69CM1ana3qKI");
+var stripe = require('stripe')("pk_live_FxnpamVYUuQg69CM1ana3qKI");
 
-//
-// console.log(request.body);
-//
-// // Get the payment token ID submitted by the form:
-// var token = request.body.stripeToken; // Using Express
-//
+// console.log(stripe);
 
+// Get the payment token ID submitted by the form:
+var token = request.body.stripeToken; // Using Express
 
-// console.log(request.body);
+console.log(token);
 
 // // Get the payment token ID submitted by the form:
 // var token = request.body.stripeToken; // Using Express
@@ -46,7 +42,7 @@ const PORT = process.env.PORT || 5000;
 //   // Use and save the charge info.
 // });
 
-//
+
 
 
 
