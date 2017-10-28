@@ -14,9 +14,10 @@ const PORT = process.env.PORT || 3001;
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
 
-var stripe = require('stripe')("pk_live_FxnpamVYUuQg69CM1ana3qKI");
 
-// console.log(stripe);
+app.post('/charge',function(req, res){
+
+var stripe = require('stripe')("sk_test_zEUsB2qIFm8kLWvwuCz9aI4D");
 
 // Get the payment token ID submitted by the form:
 var token = request.body.stripeToken; // Using Express
@@ -43,15 +44,7 @@ console.log(token);
 // });
 
 
-
-
-
-// // YOUR CODE (LATER): When it's time to charge the customer again, retrieve the customer ID.
-// stripe.charges.create({
-//   amount: 1500, // $15.00 this time
-//   currency: "usd",
-//   customer: customerId,
-// });
+})
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
 
