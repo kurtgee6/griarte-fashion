@@ -9,38 +9,38 @@ const Navbar = () =>
     </p>
     <div className="tooltip">
       <li id="firstIcon" className={window.location.pathname === "/" ? "active" : ""}>
-        <Link to="/"><i class="material-icons" id="navIcons">home</i></Link>
-        <span class="tooltiptext">home</span>
+        <Link to="/"><i className="material-icons" id="navIcons">home</i></Link>
+        <span className="tooltiptext">home</span>
       </li>
     </div>
     <div className="tooltip">
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/Shop"><i class="material-icons" id="navIcons">shopping_basket</i></Link>
-        <span class="tooltiptext">shop</span>
+        <Link to="/Shop"><i className="material-icons" id="navIcons">shopping_basket</i></Link>
+        <span className="tooltiptext">shop</span>
       </li>
     </div>
     <div className="tooltip">
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/ShoppingCart"><i class="material-icons" id="navIcons">shopping_cart</i></Link>
-        <span class="tooltiptext">shopping cart</span>
+        <Link to="/ShoppingCart"><i className="material-icons" id="navIcons">shopping_cart</i></Link>
+        <span className="tooltiptext">shopping cart</span>
       </li>
     </div>
     <div className="tooltip">
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/Fashion"><i class="material-icons" id="navIcons">photo_camera</i></Link>
-        <span class="tooltiptext">fashion</span>
+        <Link to="/Fashion"><i className="material-icons" id="navIcons">photo_camera</i></Link>
+        <span className="tooltiptext">fashion</span>
       </li>
     </div>
     <div className="tooltip">
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/About"><i class="material-icons" id="navIcons">chrome_reader_mode</i></Link>
-        <span class="tooltiptext">about</span>
+        <Link to="/About"><i className="material-icons" id="navIcons">chrome_reader_mode</i></Link>
+        <span className="tooltiptext">about</span>
       </li>
     </div>
     <div className="tooltip">
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/FAQ"><i class="material-icons" id="navIcons">live_help</i></Link>
-        <span class="tooltiptext">faq</span>
+        <Link to="/FAQ"><i className="material-icons" id="navIcons">live_help</i></Link>
+        <span className="tooltiptext">faq</span>
       </li>
     </div>
   </div>
