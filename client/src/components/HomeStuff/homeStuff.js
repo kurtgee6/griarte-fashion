@@ -7,15 +7,15 @@ import "./homeStuff.css";
 const HomeStuff = () =>
     <div>
         {/* About Griarte Image */}
-        {<img className="homeImage" alt="Home Image" src={require("../../griarte_files/griarte011.jpg")} />}
+        {<img className="homeImage" alt="Home Image" src={require("../../griarte_files/ss.png")} />}
      {/* Griarte Video */}
-        <Row classname="aboutVideo">
+        {/* <Row classname="aboutVideo">
             <Player
                 playsInline
                 poster="/assets/poster.png"
                 style
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
             />
-        </Row>
+        </Row> */}
     </div>
 export default HomeStuff;
