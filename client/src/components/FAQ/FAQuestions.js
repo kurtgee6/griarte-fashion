@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input, Row} from 'react-materialize';
+import { Button, Input, Row, Toast} from 'react-materialize';
 import "./FAQ.css";
 
 
@@ -52,8 +52,13 @@ const FAQ = () =>
             <Input type="text" label="Name" s={2}  />
             <Input type="email" label="Email" s={2} />
             <Input type="text" label="Message" s={6} />
-            <br/>     
-            <Button id="faqButton" waves='light'>Submit!</Button>
+            <br/> 
+            <Toast id="faqButton" toast="here you go!">
+                Submit
+            </Toast>    
+            {/* <Button id="faqButton" waves='light'>Submit!
+
+            </Button> */}
     </Row>
 </div>
 

@@ -85,7 +85,6 @@ const AboutG = (props) =>
                     </h3>
                 </Slide>
                 <Slide
-                    id="teamNamess"
                     placement="left">
                     <h3 id="TeamSlogan"> Rach Griarte<br/>Front-End Developer</h3>
                     <h3 id="TeamSlogans">
