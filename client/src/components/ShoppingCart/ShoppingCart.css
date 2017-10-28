@@ -1,11 +1,24 @@
+.ShoppingCartPage {
+  background-color: black;
+  float: right;
+  padding: 20px;
+  width: 50%;
+  height: 100vh;
+}
+
 .ShopTitle {
-  color: black;
+  color: white;
   text-align: center;
+  background-color: black;
 }
 
 .Purchase {
-  position: absolute;
-   bottom: 80px;
-   left: 55%;
-   margin-left: -104.5px; /*104.5px is half of the button's width*/
+  position: fixed;
+  top: 90vh;
+  left: 90%;
+}
+
+.item1 {
+  text-align: center;
+  color: black;
 }
