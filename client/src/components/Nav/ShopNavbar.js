@@ -7,7 +7,6 @@ import ScrollHorizontal from "../ScrollHorizontal/ScrollHorizontal.js";
 import { Link } from "react-router-dom";
 
 
-
 class ShopNavbar extends Component {
 
     state: {
@@ -35,7 +34,7 @@ class ShopNavbar extends Component {
 
     render() {
     return (
-    <div className="ShopBody">
+    <div className="shopBackground">
         <Tabs className='tab-demo z-depth-1'>
             {/* Render All clothes */}
             <Tab title="All" id="ShopNavbars">

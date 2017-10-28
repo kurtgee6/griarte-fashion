@@ -1,44 +1,56 @@
 {
     "development": {
+
+
+        "username": "root",
+
+        "password": "",
+
+
  
         "username": "root",
  
+<<<<<<< HEAD
         "password": "2236Nivlem!!",
+=======
+        "password": "",
+>>>>>>> f24cbdd4288ba29b22393832b892e4de33c85a34
  
+
         "database": "griarte",
- 
+
         "host": "127.0.0.1",
- 
+
         "dialect": "mysql"
- 
+
     },
- 
+
     "test": {
- 
+
         "username": "",
- 
+
         "password": null,
- 
+
         "database": "",
- 
+
         "host": "",
- 
+
         "dialect": "mysql"
- 
+
     },
- 
+
     "production": {
- 
+
         "username": "",
- 
+
         "password": null,
- 
+
         "database": "",
- 
+
         "host": "127.0.0.1",
- 
+
         "dialect": "mysql"
- 
+
     }
- 
+
 }

@@ -1,6 +1,9 @@
-/* body */
-.ShopBody {
-    background-color: black;
+/* page background */
+.shopBackground {
+    background: black;
+    display: flex;
+    height: 100vh;
+    overflow-x: scroll;
 }
 /* Tab Navbar */
 .row {

@@ -1,7 +1,9 @@
 import React from "react";
+
 import {Collapsible, CollapsibleItem, Slide, Slider, Modal, Button} from 'react-materialize';
 import { Player } from 'video-react';
-import "../../../node_modules/video-react/dist/video-react.css";
+import "video-react/dist/video-react.css";
+
 import "./aboutGriarte.css";
 
 const AboutG = (props) => 
@@ -13,15 +15,6 @@ const AboutG = (props) =>
         </div>
         {/* About Griarte Image */}
             {<img className="aboutGriarteimg" alt="aboutGriarteimg" src={require("../../griarte_files/griarte33.jpg")} />}
-        {/* Griarte Image */}
-        <div classname="aboutVideo">
-            <Player
-                playsInline
-                poster="/assets/poster.png"
-                style
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            />
-        </div>
         {/* Story Of The Future Timeline */}
         <div className="storyTimeline">
             <Collapsible accordion>
@@ -92,7 +85,7 @@ const AboutG = (props) =>
                     </h3>
                 </Slide>
                 <Slide
-                    id="teamNames"
+                    id="teamNamess"
                     placement="left">
                     <h3 id="TeamSlogan"> Rach Griarte<br/>Front-End Developer</h3>
                     <h3 id="TeamSlogans">
@@ -109,10 +102,10 @@ const AboutG = (props) =>
                     <h3 id="TeamSlogan"> Kurt Griarte<br/>Back-End Developer</h3>
                     <h3 id="TeamSlogans">
                         Favorite Part: 
-                        <br/>Designing the look and feel
+                        <br/>The logic
                         <br/>
                         <br/>Least Favorite: 
-                        <br/>Positoning/Resizing
+                        <br/>Setting up Stripe
                     </h3>
                 </Slide>
                 <Slide
