@@ -1,6 +1,9 @@
 import React from "react";
-import {Collapsible, CollapsibleItem, Slide, Slider} from 'react-materialize';
-import "../../../node_modules/video-react/dist/video-react.css";
+
+import {Collapsible, CollapsibleItem, Slide, Slider, Modal, Button} from 'react-materialize';
+import { Player } from 'video-react';
+import "video-react/dist/video-react.css";
+
 import "./aboutGriarte.css";
 
 const AboutG = (props) => 

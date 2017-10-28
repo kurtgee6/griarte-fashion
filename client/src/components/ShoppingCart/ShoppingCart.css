@@ -1,13 +1,11 @@
-.side-nav, .side-nav a, .side-nav li {
-  background-color: grey;
-  color: white;
+.ShopTitle {
+  color: black;
+  text-align: center;
 }
 
-.sidenavitem {
-  color: white;
-  background-color: yellow;
-}
-
-/*.btn {
+.Purchase {
   position: absolute;
-}*/
+   bottom: 80px;
+   left: 55%;
+   margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
