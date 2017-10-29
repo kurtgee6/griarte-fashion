@@ -73,7 +73,6 @@ input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([read
 #faqQ {
   right: 0px;
   position: fixed;
-  background: yellow;
   height: 100px;
 
 }

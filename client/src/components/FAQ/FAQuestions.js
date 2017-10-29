@@ -3,7 +3,7 @@ import { Button, Input, Row, Toast} from 'react-materialize';
 import "./FAQ.css";
 
 
-const FAQ = () =>
+const FAQ = (props) =>
 <div>
     <div className="FAQcards">
         <div class="FAQquestion">What is Griarte?
@@ -49,16 +49,15 @@ const FAQ = () =>
         <p id="faqTop">
             Need to get in touch? Message us!
         </p>
-            <Input type="text" label="Name" s={2}  />
-            <Input type="email" label="Email" s={2} />
-            <Input type="text" label="Message" s={6} />
+            <Input onChange={props.onNameChange} type="text" label="Name" s={2}  />
+            <Input onChange={props.onEmailChange} type="email" label="Email" s={2} />
+            <Input onChange={props.onMessageChange} type="text" label="Message" s={6} />
             <br/> 
-            <Toast id="faqButton" toast="here you go!">
-                Submit
-            </Toast>    
-            {/* <Button id="faqButton" waves='light'>Submit!
-
-            </Button> */}
+            
+            <Button onClick={props.myClick} id="faqButton" waves='light'>Submit!
+        
+            </Button> 
+            
     </Row>
 </div>
 
