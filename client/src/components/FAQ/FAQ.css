@@ -76,3 +76,21 @@ input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([read
   height: 100px;
 
 }
+/* iPhone screen */
+@media (max-width:640px) {
+  /* STYLES GO HERE */
+  .FAQcards {
+    margin-left: 80px;
+    padding-left: 10px;
+    height: 70vh;    
+    background: none;
+  }
+  .faqMore {
+    margin-left: 0px;
+    height: 45vh;
+    width: 100%;
+  }
+  .FAQquestion {
+    padding: 50px 35px;
+  }
+}

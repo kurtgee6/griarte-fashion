@@ -42,9 +42,6 @@ const FAQ = (props) =>
             </span>
         </div>
     </div>
-    <p id="faqQ">Frequently Asked Questions
-        <i class="material-icons">arrow_forward</i>
-    </p>z
     <Row className="faqMore">
         <p id="faqTop">
             Need to get in touch? Message us!
@@ -52,12 +49,8 @@ const FAQ = (props) =>
             <Input onChange={props.onNameChange} type="text" label="Name" s={2}  />
             <Input onChange={props.onEmailChange} type="email" label="Email" s={2} />
             <Input onChange={props.onMessageChange} type="text" label="Message" s={6} />
-            <br/> 
-            
-            <Button onClick={props.myClick} id="faqButton" waves='light'>Submit!
-        
-            </Button> 
-            
+            <br/>         
+            <Button onClick={props.myClick} id="faqButton" waves='light'>Submit!</Button> 
     </Row>
 </div>
 

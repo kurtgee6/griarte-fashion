@@ -2,3 +2,10 @@
     width: 2350px;
     height: 100vh;
   }
+  /* iPhone screen */
+@media (max-width:640px) {
+  /* STYLES GO HERE */
+  .scroll {
+    width: 2310px;
+  }
+}
