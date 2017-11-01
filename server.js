@@ -1,27 +1,27 @@
 //Require griarte fasion dependencies
-var express = require('express');
-var request = require('request');
-var app = express();
+const express = require('express');
+const request = require('request');
+const app = express();
 
-var passport = require('passport');
-var session = require('express-session');
-var bodyParser = require('body-parser');
-var env = require('dotenv').load();
-var Stripe = require('stripe');
-const routes = require('./routes');
+const passport = require('passport');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const env = require('dotenv').load();
+const Stripe = require('stripe');
+const routes = require('../griarte-fashion/routes');
 const PORT = process.env.PORT || 3001;
 
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
 
-var stripe = require('stripe')("pk_live_FxnpamVYUuQg69CM1ana3qKI");
+//var stripe = require('stripe')("pk_live_FxnpamVYUuQg69CM1ana3qKI");
 
 // console.log(stripe);
 
 // Get the payment token ID submitted by the form:
-var token = request.body.stripeToken; // Using Express
+//var token = request.body.stripeToken; // Using Express
 
-console.log(token);
+//console.log(token);
 
 // // Get the payment token ID submitted by the form:
 // var token = request.body.stripeToken; // Using Express
@@ -85,10 +85,10 @@ const models = require("./models");
 app.use(routes);
 
 //Authentication Route
-const authRoute = require('./routes/auth.js')(app, passport);
+const authRoute = require('../griarte-fashion/routes/auth.js')(app, passport);
 
 //load passport strategies
-require('./config/passport/passport.js')(passport, models.user);
+require('../griarte-fashion/config/passport/passport.js')(passport, models.user);
 
 //Sync Database
 models.sequelize.sync().then(function() {

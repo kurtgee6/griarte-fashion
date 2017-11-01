@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the clothingController
 module.exports = {
   findAll: function(req, res) {
+    console.log(req.body);
     db.clothing
       .findAll()
       .then(dbModel => res.json(dbModel))
@@ -22,8 +23,13 @@ module.exports = {
   },
   update: function(req, res) {
     db.clothing
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
+      .update(
+        { cart: true, 
+        }, {
+          where: {
+            [req.body.id.eq] : req.params.id
+          }
+        })
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
