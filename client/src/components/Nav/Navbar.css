@@ -8,6 +8,31 @@
     border-radius: 15%;
     font-size: 40px;
 }
+/* Navbar for iPhone */
+.NavbarForIphone {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+}
+#ButtonForIphone {
+    background: url("../../griarte_files/griarteIcon.jpg");
+    background-size: 80px 85px;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#ButtonForIphone:hover {
+    -webkit-box-shadow: 0 0 25px rgb(255, 255, 255);
+    box-shadow: 0 0 25px rgb(255, 255, 255); 
+}
+#dropNav {
+    background: black;
+}
+/* Regular Home Navbar */
 .Navbar {
     background: rgb(0, 0, 0);
     box-shadow: 2px 0px 5px #858585;
@@ -47,4 +72,17 @@
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+/* iPhone screen */
+@media (max-width:640px) {
+    /* STYLES GO HERE */
+    .Navbar {
+        visibility: hidden;
+    }
+    .storyTimeline {
+       padding: 0px 100px;
+    }
+    .NavbarForIphone {
+        visibility: visible;
+    }
 }

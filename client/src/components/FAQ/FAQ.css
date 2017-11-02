@@ -43,9 +43,9 @@
 }
 .faqMore {
   background: linear-gradient(to right, black); 
-  bottom: 0;
+  bottom: 10px;
   /* border-bottom: 60px solid rgba(0, 0, 0, 0.7); */
-  height: 30vh;
+  height: 40vh;
   margin-left: 80px;
   padding: 10px 120px 10px 80px;
 }
@@ -73,7 +73,24 @@ input[type=text]:focus:not([readonly])+label , input[type=email]:focus:not([read
 #faqQ {
   right: 0px;
   position: fixed;
-  background: yellow;
   height: 100px;
 
+}
+/* iPhone screen */
+@media (max-width:640px) {
+  /* STYLES GO HERE */
+  .FAQcards {
+    margin-left: 80px;
+    padding-left: 10px;
+    height: 70vh;    
+    background: none;
+  }
+  .faqMore {
+    margin-left: 0px;
+    height: 45vh;
+    width: 100%;
+  }
+  .FAQquestion {
+    padding: 50px 35px;
+  }
 }

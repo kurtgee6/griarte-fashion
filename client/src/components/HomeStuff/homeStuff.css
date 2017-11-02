@@ -3,3 +3,11 @@
     height: 78vh;  
     float: left;
 }
+
+/* iPhone screen */
+@media (max-width:640px) {
+    /* STYLES GO HERE */
+    .homeImage{ 
+        height: 45vh;
+    }
+}
