@@ -11,21 +11,7 @@ import TakeMoney from "../Stripe-Checkout/Stripe-Checkout.js";
 
 class ShopNavbar extends Component {
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         clothings: [],
-    //         type: "",
-    //         price: "",
-    //         sizes: "",
-    //         quantity: "",
-    //         image: "",
-    //         cart: []
-    //     }
-    // }
-
-
-    state: {
+  state = {
         clothings: [],
         type: "",
         price: "",
@@ -44,7 +30,6 @@ class ShopNavbar extends Component {
         .then(res => this.setState({clothings: res.data, type: "", price: "", sizes: "", quantity: "", image: "", cart:[]}))
         .catch(err => console.log(err));
     };
-
   
   addToCart = (id) => {
     var cart = this.state.cart;
@@ -63,42 +48,13 @@ class ShopNavbar extends Component {
 
   deleteFromCart =  id => {
     
-    //This gets our array
     var cart = this.state.cart;
-    console.log("Delete Cart", cart);
-
     this.setState({cart: this.state.cart.filter(function(clothes){
         return clothes.id !== id
         })
     });
-
-    
-
    
-
-    
-
-
-    // //This tells us the values of id and itemID
-    // console.log("id", id);
-    
-    
-
-    // //This gets the index of the array object
-    // var getIndex = cart.map(e => e.id).indexOf(cart);
-    // console.log("Get Index", getIndex);
-
-    // //This remove the array object from cart using the "getIndex" value
-    // cart.splice(getIndex, 1);
-    // console.log("Updated Cart", cart);
-
-    // //This sets the state of cart after item is removed
-    // this.setState({cart: cart});
-    // console.log("Final Cart", cart);
-    
   };
-
-
 
 
     render() {
