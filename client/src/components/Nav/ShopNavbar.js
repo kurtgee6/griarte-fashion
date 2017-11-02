@@ -248,7 +248,7 @@ class ShopNavbar extends Component {
                 
                 </Tab>
                 {/* Render Accesories */}
-                <Tab title="Shopping Cart">
+                <Tab title={<i className="small material-icons" id="navIcons">shopping_cart</i>}>
                <TakeMoney></TakeMoney>
                     
             {(this.state && this.state.cart && this.state.cart.length) ? (
@@ -256,14 +256,12 @@ class ShopNavbar extends Component {
                
                     {this.state.cart.map(item => (
                    <ListItem key={item.id}>
-                           
                             <Card className='blue-grey darken-1' textClassName='white-text' title=''>
                                     <div><img src={item.image}></img></div>
                                     <div>Type: {item.type}</div>
                                     <div>Price: {item.price}</div>
                                     <div>Sizes: {item.sizes}</div>
                                     <div>Quantity: {item.quantity}</div>
-                                    <div>Total: {item.price}</div>
                                     <DeleteBtn onClick={() => this.deleteFromCart(item.id)} />  
                             </Card>
 
