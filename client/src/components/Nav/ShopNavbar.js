@@ -84,7 +84,6 @@ class ShopNavbar extends Component {
                                         I WANT THIS!
                              </Button>
                             </div>}>
-                        <p><a href="#">This is a link</a></p>  
                     </Card>
                    </ListItem>
                  ))}
@@ -120,7 +119,6 @@ class ShopNavbar extends Component {
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
                             </div>}>
-                        <p><a href="#">This is a link</a></p>  
                     </Card>
                    </ListItem>
                  )
@@ -161,7 +159,6 @@ class ShopNavbar extends Component {
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
                              </div>}>
-                        <p><a href="#">This is a link</a></p>   
                     </Card>
                    </ListItem>
                  )
@@ -200,7 +197,6 @@ class ShopNavbar extends Component {
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
                             </div>}>
-                        <p><a href="#">This is a link</a></p>  
                     </Card>
                    </ListItem>
                  ))}
@@ -235,7 +231,6 @@ class ShopNavbar extends Component {
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
                             </div>}>
-                        <p><a href="#">This is a link</a></p>   
                     </Card>
                    </ListItem>
                  ))}
@@ -249,7 +244,7 @@ class ShopNavbar extends Component {
                 </Tab>
                 {/* Render Accesories */}
                 <Tab title="Shopping Cart">
-               <TakeMoney></TakeMoney>
+               <TakeMoney ></TakeMoney>
                     
             {(this.state && this.state.cart && this.state.cart.length) ? (
                 <List>
