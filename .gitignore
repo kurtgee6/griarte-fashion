@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-node_modules
-=======
-node
-node_modules/
-.DS_Store
-package-lock.json
-*.log
->>>>>>> bca7da8dba498ce688761c9f8db3a47d126eff56
-=======
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
+client/node_modules
 
 # testing
 /coverage
@@ -26,8 +16,9 @@ package-lock.json
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+NODE_ENV='development'
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> 5a994ce9a3954aefcfa8023afae5e5cc2cdbc7d7
