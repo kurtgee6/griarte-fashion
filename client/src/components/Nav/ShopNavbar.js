@@ -228,7 +228,7 @@ class ShopNavbar extends Component {
             
                 </Tab>
                 {/* Render Accesories */}
-                <Tab title="Accesories">
+                <Tab title="Accessories">
                     {/* <ScrollHorizontal> */}
             {(this.state && this.state.clothings && this.state.clothings.length) ? (
                 <List>
