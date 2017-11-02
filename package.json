@@ -23,6 +23,11 @@
   "homepage": "https://github.com/kurtgee6/griarte-fashion#readme",
   "dependencies": {
     "axios": "^0.16.2",
+<<<<<<< HEAD
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.0",
+=======
     "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
@@ -36,6 +41,7 @@
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.0",
     "css-loader": "^0.23.1",
+>>>>>>> master
     "dotenv": "^4.0.0",
     "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",
@@ -55,6 +61,11 @@
     "react-redux": "^5.0.6",
     "react-router": "^2.4.0",
     "react-router-dom": "^4.2.2",
+<<<<<<< HEAD
+    "request": "^2.83.0",
+    "sequelize": "^4.15.0",
+    "stripe": "^5.1.1"
+=======
     "react-router-redux": "^4.0.4",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
@@ -78,5 +89,7 @@
     "expect-jsx": "^2.5.1",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2"
+>>>>>>> master
   }
+
 }

@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "./ScrollHorizontal.css";
 
 class ScrollHorizontal extends React.Component {
-    constructor(props) {
-      super(props);
-    };
     render() {
         return (
     <div>

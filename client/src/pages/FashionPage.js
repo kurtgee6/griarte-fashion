@@ -5,9 +5,6 @@ import Fashion from "../components/Fashion/Fashion.js";
 import ScrollHorizontal from "../components/ScrollHorizontal/ScrollHorizontal.js"
 
 class FashionPage extends React.Component {
-      constructor(props) {
-        super(props);
-  };
   render() {
   return (
       <div>

@@ -9,7 +9,7 @@
     background: linear-gradient(rgba(63, 63, 63, .1), rgb(0, 0, 0));
     padding: 20px;
     float: left;
-    margin: 0px 0px 0px 80px;
+    margin-left: 80px;
     width: 600px;
     min-height: 100vh;
     text-align: center;
@@ -18,11 +18,14 @@
     border-right: 10px solid rgb(0, 0, 0);
     border-top-right-radius: 10%;
 }
+.aboutGriarte:hover{
+    color:#e8e8e8;
+}
 /* Story Of The Future Timeline */
 #storyTimelineH1 {
     font-size: 30px;
     color: rgb(204, 204, 204);
-    padding: 5px;
+    padding: 0px 5px;
 }
 .storyTimeline {
     padding: 0px 80px;
@@ -45,7 +48,7 @@ div.collapsible-header {
 }
 div.collapsible-header:hover {
     text-decoration: line-through;
-    color:rgb(255, 255, 255);
+    color:rgb(206, 206, 206);
  }
 div.collapsible-body {
     color: rgb(186, 155, 44);
@@ -55,6 +58,7 @@ div.collapsible-body {
     margin: 0;
     float: left;
     border-radius: 10%;
+    background: rgba(0, 0, 0, .7);
 }
 #collapseHead {
     font-size: 14px;
@@ -72,9 +76,11 @@ div.collapsible-body {
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
-/* About Video */
-
-/* The Team */
+.aboutGriarteimg:hover{
+    -webkit-box-shadow: 0 0 55px rgb(0, 0, 0);
+    box-shadow: 0 0 55px rgb(0, 0, 0); 
+    background: black;
+}
 .Team {
     width: 370px;
     height: 100vh;
@@ -119,4 +125,19 @@ Slider {
     filter: grayscale(40%);
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+}
+#yas{
+    float: right;
+    color: black;
+}
+/* iPhone screen */
+@media (max-width:640px) {
+     /* STYLES GO HERE */
+     .aboutGriarte {
+         width: 640px;
+         margin-left: 0px;
+     }
+     .storyTimeline {
+        padding: 0px 100px;
+     }
 }

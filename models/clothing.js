@@ -21,6 +21,10 @@ module.exports = function(sequelize, Sequelize) {
         },
         image: {
             type: Sequelize.STRING
+        },
+        cart: {
+            type: Sequelize.BOOLEAN,
+            default: false
         }
     });
 

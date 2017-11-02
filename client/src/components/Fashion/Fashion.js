@@ -1,4 +1,5 @@
 import React from "react";
+import {Card, CardTitle} from 'react-materialize';
 import { Link } from "react-router-dom";
 import imageOne from "../../griarte_files/griarte2.jpg";
 import imageTwo from "../../griarte_files/griarte15.jpg";
@@ -14,6 +15,7 @@ import imageEleven from "../../griarte_files/griarte24.jpg";
 import imageTwelve from "../../griarte_files/griarte035.jpg";
 import imageThirteen from "../../griarte_files/griarte32.jpg";
 import imageFourteen from "../../griarte_files/griarte23.jpg";
+
 import "./Fashion.css";
 
 const Fashion  = () =>
