@@ -1,13 +1,29 @@
-.side-nav, .side-nav a, .side-nav li {
-  background-color: grey;
-  color: white;
+.ShoppingCartPage {
+  background-color: black;
+  float: right;
+  padding: 20px;
+  width: 50%;
+  height: 100vh;
 }
 
-.sidenavitem {
+.ShopTitle {
   color: white;
-  background-color: yellow;
+  text-align: center;
+  background-color: black;
 }
 
-/*.btn {
-  position: absolute;
-}*/
+.Purchase {
+  position: fixed;
+  top: 90vh;
+  left: 90%;
+}
+
+.item1 {
+  text-align: center;
+  color: black;
+}
+
+.item1 {
+  text-align: center;
+  color: black;
+}

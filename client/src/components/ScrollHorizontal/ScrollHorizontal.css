@@ -1,7 +1,8 @@
 .scroll {
-    width: 2350px;
+    width: 2340px;
     height: 100vh;
   }
+<<<<<<< HEAD
   /* iPhone screen */
 @media (max-width:640px) {
   /* STYLES GO HERE */
@@ -9,3 +10,5 @@
     width: 2310px;
   }
 }
+=======
+>>>>>>> master

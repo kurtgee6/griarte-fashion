@@ -1,14 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ScrollHorizontal.css";
 
 class ScrollHorizontal extends React.Component {
-    constructor(props) {
-      super(props);
-    };
     render() {
         return (
     <div>
-        <div class="scroll">
+        <div className="scroll">
             {this.props.children}
         </div>
     </div>

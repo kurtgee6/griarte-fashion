@@ -6,22 +6,26 @@ import Shop from "./pages/Shop.js";
 import QuickView from "./pages/QuickView.js";
 import FashionPage from "./pages/FashionPage.js";
 import FAQ from "./pages/FAQ.js";
+import Dummy from "./pages/dummypage.js";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart.js";
 import "./App.css";
 
 const App = () =>
-  <Router>
-    <div>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Shop" component={Shop} />
-        <Route exact path="/Shop/:id" component={QuickView} />
-        <Route exact path="/FashionPage" component={FashionPage} />
-        <Route exact path="/FAQ" component={FAQ} />
-        <Route exact path="/ShoppingCart" component={ShoppingCart} />
-      </Switch>
-    </div>
-  </Router>;
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/About" component={About} />
+              <Route exact path="/Shop" component={Shop}>
+              </Route>
+              <Route exact path="/Shop/:id" component={QuickView} />
+              <Route exact path="/Fashion" component={FashionPage} />
+              <Route exact path="/FAQ" component={FAQ} />
+              <Route exact path="/Dummy" component={Dummy} />
+              <Route exact path="/ShoppingCart" component={ShoppingCart} />
+            </Switch>
+          </div>
+        </Router>
+    ;
 
 export default App;
