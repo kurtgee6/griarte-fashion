@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ScrollHorizontal.css";
 
 class ScrollHorizontal extends React.Component {

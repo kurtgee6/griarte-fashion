@@ -1,13 +1,13 @@
 /* page background */
 .shopBackground {
-    background: black;
+    background: url("../../griarte_files/lisa.jpg");
     display: flex;
     height: 100vh;
     overflow-x: scroll;
 }
 /* Tab Navbar */
 .row {
-    width: 94%;
+    width: 77%;
     margin-left: 6%;
     position: fixed;
 }
@@ -41,6 +41,7 @@
     background: linear-gradient(to right, rgb(169, 169, 169) , rgb(169, 169, 169));
     border-radius: 20%;
     border: none;
+    color: black;
 }
 #pickSize {
     background-color: black;
@@ -49,4 +50,95 @@
     width: 25px;
     height: 25px;
     margin: 20px 5px 0px 5px;
+}
+#insideCard {
+    color: #383838;
+    margin: 0;
+    padding: 10px;
+    line-height: 200%;
+}
+
+.card .card-content {
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+    background: gray;
+}
+#byebye {
+    color: black;
+}
+.tabs .tab a {
+    color: rgba(235, 235, 235, 0.7);
+    background: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+.tabs .tab:hover a {
+    color: rgba(0, 0, 0, 0.7);
+    background: rgb(119, 119, 119);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: rgb(0, 0, 0);
+    color: #e8e8e8;
+}
+.btn, .btn-large {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    border: 1px solid white;
+    border-radius: 10%;
+    background: linear-gradient(to right, rgb(44, 44, 44) , rgb(12, 12, 12));
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+.inMyCart {
+    height: 100vh;
+    width: 17%;
+    right: 0;
+    position: fixed;
+    background: black;
+    padding: 10px;
+    font-size: 12px;
+    margin: 0px;
+}
+#imgcart {
+    height: 100px;
+    width: 100px;
+}
+.plsPay {
+    margin-top: 10px;
+    text-align: center;
+}
+/* iPhone screen */
+@media (max-width:640px) {
+    /* STYLES GO HERE */
+   #imgcart {
+    height: 60px;
+    width: 60px;
+    }
+    .inMyCart {
+        width: 30%;
+    }
+    .plsPay {
+        margin-top: 4px;
+    }
+    .row {
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 0px;
+    }
 }

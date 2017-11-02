@@ -1,6 +1,6 @@
 #upTop {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 5px 15px;
     /* border-top: 1px solid rgb(116, 116, 116); */
     border-bottom: 1px solid rgb(124, 124, 124);
@@ -41,6 +41,9 @@
     top: 0;
     position: fixed;
     z-index: 9999;
+}
+#firstIcon {
+    margin-top: 20px;
 }
 #navIcons {
     color: rgb(255, 255, 255);
