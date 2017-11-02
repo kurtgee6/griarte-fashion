@@ -43,9 +43,9 @@
 }
 .faqMore {
   background: linear-gradient(to right, black); 
-  bottom: 0;
+  bottom: 10px;
   /* border-bottom: 60px solid rgba(0, 0, 0, 0.7); */
-  height: 30vh;
+  height: 40vh;
   margin-left: 80px;
   padding: 10px 120px 10px 80px;
 }
