@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Dropdown, Button, NavItem} from 'react-materialize';
+import {Dropdown, Button} from 'react-materialize';
 import "./Navbar.css";
 
 const Navbar = () =>
@@ -21,13 +21,6 @@ const Navbar = () =>
       <li className={window.location.pathname === "/advice" ? "active" : ""}>
         <Link to="/Shop"><i className="material-icons" id="navIcons">shopping_basket</i></Link>
         <span className="tooltiptext">shop</span>
-      </li>
-    </div>
-    {/* Path to Shopping Cart */}
-    <div className="tooltip">
-      <li className={window.location.pathname === "/advice" ? "active" : ""}>
-        <Link to="/ShoppingCart"><i className="material-icons" id="navIcons">shopping_cart</i></Link>
-        <span className="tooltiptext">shopping cart</span>
       </li>
     </div>
     {/* Path to Fashion Page */}
@@ -64,11 +57,6 @@ const Navbar = () =>
         <div id="dropNav">
           <li className={window.location.pathname === "/" ? "active" : ""}>
             <Link to="/Shop">SHOP</Link>
-          </li>
-        </div>
-        <div id="dropNav">
-          <li className={window.location.pathname === "/" ? "active" : ""}>
-            <Link to="/ShoppingCart">CART</Link>
           </li>
         </div>
         <div id="dropNav">

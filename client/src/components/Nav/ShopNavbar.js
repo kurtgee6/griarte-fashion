@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
-import { Tab, Tabs, Card, CardTitle, Button} from "react-materialize";
+import { Tab, Tabs, Card, CardTitle, Button, Row, Input} from "react-materialize";
 import "./ShopNavbar.css";
 import ScrollHorizontal from "../ScrollHorizontal/ScrollHorizontal.js";
 import { Link } from "react-router-dom";
@@ -63,22 +63,28 @@ class ShopNavbar extends Component {
         <Tabs className='tab-demo z-depth-1'>
             {/* Render All clothes */}
             <Tab title="All" id="ShopNavbars">
-            <ScrollHorizontal>
+            {/* <ScrollHorizontal> */}
             {(this.state && this.state.clothings && this.state.clothings.length) ? (
                 <List>
                  {this.state.clothings.map(item => (
                    <ListItem key={item.id}>
                      <Card header={<CardTitle reveal image={item.image} waves='light'/>}
-                        title="Card Title"
-                        reveal={<div>
+                     title= {"$" + item.price}
+                        reveal={<div id="insideCard">
                             <div>Type: {item.type}</div>
                             <div>Price: {item.price}</div>
-                            <div>Sizes: {item.sizes}</div>
-                            <div>Quantity: {item.quantity}</div>
+                            <div>Sizes:
+                            <Row>
+                              <Input name='group1' type='checkbox' value='red' label='S' />
+                              <Input name='group1' type='checkbox' value='red' label='M' />
+                              <Input name='group1' type='checkbox' value='red' label='L' />   
+                           </Row>
+                           <br/>
+                           <br/>
+                           <br/>
+                          </div>
                             <Link to={"/clothing/" + item.id}>
-                               <strong>
-                                 Clothing Item
-                               </strong>
+                        
                              </Link>
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>
                                         I WANT THIS!
@@ -92,29 +98,34 @@ class ShopNavbar extends Component {
               <h3>No Results to Display</h3>
             )}
             
-            </ScrollHorizontal>
+            {/* </ScrollHorizontal> */}
              
             </Tab>
             {/* Render Long Sleeves Shirts */}
             <Tab title="Long Sleeves">
-                <ScrollHorizontal>
+                {/* <ScrollHorizontal> */}
                 {(this.state && this.state.clothings && this.state.clothings.length)
                     ? (
                 <List>
                  {this.state.clothings.filter(clothes => clothes.type == "longsleeves").map(item => (
                    <ListItem key={item.id}>
                      <Card header={<CardTitle reveal image={item.image} waves='light'/>}
-                        title="Card Title"
-                        reveal={<div>
+                     title= {"$" + item.price}
+                     reveal={<div id="insideCard">
                             <div>Type: {item.type}</div>
                             <div>Price: {item.price}</div>
-                            <div>Sizes: {item.sizes}</div>
-                            <div>Quantity: {item.quantity}</div>
+                            <div>Sizes:
+                            <Row>
+                              <Input name='group1' type='checkbox' value='red' label='S' />
+                              <Input name='group1' type='checkbox' value='red' label='M' />
+                              <Input name='group1' type='checkbox' value='red' label='L' />   
+                           </Row>
+                           <br/>
+                           <br/>
+                           <br/>
+                          </div>
                             <Link to={"/clothing/" + item.id}>
-                               <strong>
-                                 Clothing Item
-                               </strong>
-
+                              
                              </Link>
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
@@ -132,29 +143,34 @@ class ShopNavbar extends Component {
             )
             
         }
-                </ScrollHorizontal>
+                {/* </ScrollHorizontal> */}
                 
                 </Tab>
             {/* Render Short Sleeves Shirts */}
             <Tab title="Short Sleeves">
-                <ScrollHorizontal>
                 {(this.state && this.state.clothings && this.state.clothings.length)
                     ? (
                 <List>
+
                  {this.state.clothings.filter(clothes => clothes.type == "shortsleeves").map(item => (
 
                    <ListItem key={item.id}>
                      <Card header={<CardTitle reveal image={item.image} waves='light'/>}
-                        title="Card Title"
-                        reveal={<div>
+                     title= {"$" + item.price}
+                     reveal={<div id="insideCard">
                             <div>Type: {item.type}</div>
                             <div>Price: {item.price}</div>
-                            <div>Sizes: {item.sizes}</div>
-                            <div>Quantity: {item.quantity}</div>
+                            <div>Sizes:
+                            <Row>
+                              <Input name='group1' type='checkbox' value='red' label='S' />
+                              <Input name='group1' type='checkbox' value='red' label='M' />
+                              <Input name='group1' type='checkbox' value='red' label='L' />   
+                           </Row>
+                           <br/>
+                           <br/>
+                           <br/>
+                          </div>
                             <Link to={"/clothing/" + item.id}>
-                               <strong>
-                                 Clothing Item
-                               </strong>
                              </Link>
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
@@ -171,28 +187,31 @@ class ShopNavbar extends Component {
               <h3>No Results to Display</h3>
             )
             
-        }
-                </ScrollHorizontal>
-                
+        }                
                 </Tab>
                 {/* Render Sweatpants/Leggings */}
-                <Tab title="Sweatpants/Leggings">
-                    <ScrollHorizontal>
+                <Tab title="Sweats/Leggings">
+                    
             {(this.state && this.state.clothings && this.state.clothings.length) ? (
                 <List>
                  {this.state.clothings.filter(clothes => clothes.type == "sweatpants").map(item => (
                    <ListItem key={item.id}>
                      <Card header={<CardTitle reveal image={item.image} waves='light'/>}
-                        title="Card Title"
-                        reveal={<div>
+                     title= {"$" + item.price}
+                     reveal={<div id="insideCard">
                             <div>Type: {item.type}</div>
                             <div>Price: {item.price}</div>
-                            <div>Sizes: {item.sizes}</div>
-                            <div>Quantity: {item.quantity}</div>
+                            <div>Sizes:
+                              <Row>
+                                <Input name='group1' type='checkbox' value='red' label='S' />
+                                <Input name='group1' type='checkbox' value='red' label='M' />
+                                <Input name='group1' type='checkbox' value='red' label='L' />   
+                             </Row>
+                             <br/>
+                             <br/>
+                             <br/>
+                            </div>
                             <Link to={"/clothing/" + item.id}>
-                               <strong>
-                                 Clothing Item
-                               </strong>
                              </Link>
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
@@ -205,28 +224,24 @@ class ShopNavbar extends Component {
               <h3>No Results to Display</h3>
             )}
             
-            </ScrollHorizontal>
+          
             
                 </Tab>
                 {/* Render Accesories */}
                 <Tab title="Accesories">
-                    <ScrollHorizontal>
+                    {/* <ScrollHorizontal> */}
             {(this.state && this.state.clothings && this.state.clothings.length) ? (
                 <List>
                  {this.state.clothings.filter(clothes => clothes.type == "accesories").map(item => (
                    <ListItem key={item.id}>
                      <Card header={<CardTitle reveal image={item.image} waves='light'/>}
-                        title="Card Title"
-                        reveal={<div>
+                     title= {"$" + item.price}
+                     reveal={<div id="insideCard">
                             <div>Type: {item.type}</div>
                             <div>Price: {item.price}</div>
-                            <div>Sizes: {item.sizes}</div>
-                            <div>Quantity: {item.quantity}</div>
+                            <div>Sizes: one size
+                          </div>
                             <Link to={"/clothing/" + item.id}>
-                               <strong>
-                                 Clothing Item
-                               </strong>
-
                              </Link>
                              <Button onClick={() => this.addToCart(item.id)} id="addToCart" waves='light' node='a'>i want this!
                              </Button>
@@ -239,28 +254,24 @@ class ShopNavbar extends Component {
               <h3>No Results to Display</h3>
             )}
             
-            </ScrollHorizontal>
-                
-                </Tab>
-                {/* Render Accesories */}
-                <Tab title="Shopping Cart">
-               <TakeMoney ></TakeMoney>
-                    
+           </Tab>
+            </Tabs>
+            {/* In My Cart */}
+            <div className="inMyCart">
+              {/* <p id="inMyCarts"> My Shopping Cart </p> */}
             {(this.state && this.state.cart && this.state.cart.length) ? (
                 <List>
                
                     {this.state.cart.map(item => (
                    <ListItem key={item.id}>
-                           
-                            <Card className='blue-grey darken-1' textClassName='white-text' title=''>
-                                    <div><img src={item.image}></img></div>
-                                    <div>Type: {item.type}</div>
-                                    <div>Price: {item.price}</div>
-                                    <div>Sizes: {item.sizes}</div>
-                                    <div>Quantity: {item.quantity}</div>
-                                    <div>Total: {item.price}</div>
-                                    <DeleteBtn onClick={() => this.deleteFromCart(item.id)} />  
-                            </Card>
+                      
+                      <Card id="inShopping" className='blue-grey darken-1' textClassName='white-text' title=''>
+                              <div><img id="imgcart" src={item.image}></img></div>
+                              <div>Type: {item.type}</div>
+                              <div>Price: {item.price}</div>
+                              <div>Sizes: {item.sizes}</div>
+                              <DeleteBtn id="byebye" onClick={() => this.deleteFromCart(item.id)} />  
+                      </Card>
 
                              
                    </ListItem>
@@ -270,11 +281,10 @@ class ShopNavbar extends Component {
              ) : (
               <h3>Shopping Cart Empty</h3>
             )}
-            
-            
-                
-                </Tab>
-            </Tabs>
+            <div className="plsPay">
+              <TakeMoney ></TakeMoney>
+            </div>
+          </div>
         </div>
         )};
     };

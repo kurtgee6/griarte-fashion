@@ -82,7 +82,7 @@ div.collapsible-body {
     background: black;
 }
 .Team {
-    width: 370px;
+    width: 350px;
     height: 100vh;
     float: left;
     background: linear-gradient(rgb(0, 0, 0), rgba(4, 4, 4, 0.1));

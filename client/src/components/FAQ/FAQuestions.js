@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input, Row, Toast} from 'react-materialize';
+import { Button, Input, Row} from 'react-materialize';
 import "./FAQ.css";
 
 
