@@ -4,9 +4,6 @@ import ShopNavbar from "../components/Nav/ShopNavbar.js";
 import "../components/Nav/ShopNavbar.css";
 
 class Shop extends React.Component {
-    constructor(props) {
-    super(props);
-    };
 
     render() {
     return (

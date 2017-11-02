@@ -5,6 +5,10 @@ export default {
   getClothes: function() {
     return axios.get("/api/clothing");
   },
+  // Updates shopping cart with item
+  update: function(id) {
+    return axios.put("/api/clothing" + id);
+  },
   // Gets the clothing items with the given id
   getClothingItem: function(id) {
     return axios.get("/api/clothing/" + id);
