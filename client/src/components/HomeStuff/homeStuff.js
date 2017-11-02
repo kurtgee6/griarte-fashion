@@ -7,11 +7,8 @@ import "./homeStuff.css";
 const HomeStuff = () =>
     <div>
         {/* About Griarte Image */}
-<<<<<<< HEAD
         {<img className="homeImage" alt="Home Image" src={require("../../griarte_files/homepagebackground.png")} />}
-=======
-        {<img className="homeImage" alt="Home" src={require("../../griarte_files/ss.png")} />}
->>>>>>> master
+        {/* {<img className="homeImage" alt="Home" src={require("../../griarte_files/ss.png")} />} */}
      {/* Griarte Video */}
         {/* <Row classname="aboutVideo">
             <Player
