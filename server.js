@@ -9,8 +9,7 @@ const bodyParser = require('body-parser');
 const env = require('dotenv').load();
 const Stripe = require('stripe');
 const routes = require('../griarte-fashion/routes');
-const PORT = process.env.PORT || 3001;
-
+const PORT = process.env.JAWSDB_URL || 3001;
 
 ///////////////////////////////////////////////////////// STRIPE /////////////////////////////////////////////////////////
 
