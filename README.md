@@ -1,3 +1,14 @@
+
+Hi everyone!
+
+The team is currently fixing the bugs. Will be up on Heroku fairly soon ~
+
+However, if you are so eager to see:
+
+1) Download the whole file
+2) Run it on terminal using 'yarn start' at the root
+3) Enjoy the site!
+
 # griarte-fashion
 
 HOME PAGE
