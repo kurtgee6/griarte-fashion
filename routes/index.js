@@ -6,9 +6,6 @@ const apiRoutes = require("./api");
 // API Routes
 router.use("/api", apiRoutes);
 
-//Authentication Routes
-//router.use("/routes", authRoutes);
-
 // sending the React app
 router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/public/index.html"));
